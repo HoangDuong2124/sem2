@@ -35,4 +35,8 @@ public class Product {
     String getId(){
         return id;
     }
+
+    public String toString(){
+        return "Ten sach la : " +name+ " co gia la: " +price+ " va ma cuon sach la: " +id ;
+    }
 }

@@ -19,6 +19,7 @@ public class TestProduct {
         System.out.println("So luong SP3 la:  "+product3.getQty());
         System.out.println("Ma SP3 la :"+ product3.getId());
 
-
+       Product product4 = new Product();
+       System.out.println(product4.toString());
     }
 }
