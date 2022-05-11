@@ -29,22 +29,25 @@ public class Account {
                 System.out.println("Ban da chon gui tien.");
                 if (money<0){
                     System.out.println("So tien gui phai lon hon 0");
+
                 }
                 else {
                     System.out.println("So tien ban gui la:" +money+"VND");
+                    amount=amount+money;
                 }
-                amount=amount+money;
+
             }
 
             if (type==1){
                 System.out.println("Ban da chon rut tien." );
-                if (money<0&&money>amount){
+                if (money<0||money>amount){
                     System.out.println("So tien rut lon hon 0 va nho hon Amount");
                 }
                 else {
                     System.out.println("So tien ban rut la: "+money+"VND");
+                    amount=amount-money;
                 }
-                amount=amount-money;
+
             }
 
 
